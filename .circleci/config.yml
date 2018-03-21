@@ -5,14 +5,13 @@ jobs:
     docker:
       - image: openjdk:7u151-alpine
     steps:
-    steps:
       # Initialization.
       - run:
           name: Installation of build dependencies.
           command: 
           command: |
             apk add --no-cache bash
-			apk add --no-cache git
+	    apk add --no-cache git
       - checkout
       - setup_remote_docker
       # Build of Docker image.
