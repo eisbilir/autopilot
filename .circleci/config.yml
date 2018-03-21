@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
   # Build & Deploy against development backend
   "build-dev":
@@ -20,7 +21,6 @@ jobs:
           command: javac --version
 
 workflows:
-  version: 2
   build:
     jobs:
       # Development builds are executed on "develop" branch only.
