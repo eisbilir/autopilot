@@ -26,6 +26,6 @@ NB:
 	that are required by this component's test code. This component is
 	used to by compile_test and test targets. Components are listed under
 	the following directory structure "component name"/"component version".
-	Components are provided AS IS for development purposes only.
+	Components are provided AS IS for development purposes only
 
 	Included:
