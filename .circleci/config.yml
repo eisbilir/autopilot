@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  # Build & Deploy against development backend
+  "build-dev":
+    docker:
+      - image: openjdk:7u151-alpine
+    steps:
+    steps:
+      # Initialization.
+      - run:
+          name: Installation of build dependencies.
+          command: 
+          command: |
+            apk add --no-cache bash
+			apk add --no-cache git
+      - checkout
+      - setup_remote_docker
+      # Build of Docker image.
+      - run:
+          name: Build of Docker image
+          command: javac --version
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      # Development builds are executed on "develop" branch only.
+      - "build-dev":
+          filters:
+            branches:
+              only: dev-circleci		  
+
