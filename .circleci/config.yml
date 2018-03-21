@@ -9,7 +9,6 @@ jobs:
       # Initialization.
       - run:
           name: Installation of build dependencies.
-          command: 
           command: |
             apk add --no-cache bash
             apk add --no-cache git
