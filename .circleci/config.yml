@@ -22,6 +22,7 @@ jobs:
             git clone --branch master https://github.com/topcoder-platform/tc-deploy-scripts ../buildscript 
             #git clone --branch master git@github.com:appirio-tech/ops.git ../direct-config-update
             git clone --branch dev-circleci https://github.com/appirio-tech/tc-components.git ../tcs
+            git clone --branch dev https://github.com/topcoder-platform/tc-online-review.git ../tc-online-review
       - checkout            
       - run:
           name: Installation of build dependencies.
