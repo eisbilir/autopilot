@@ -36,7 +36,8 @@ jobs:
             javac -version
             ant -version
             ant clean dist
-
+      - store_artifacts:
+          path: ~/tc-online-review/build/ant/auto_pilot/dist
 workflows:
   version: 2
   build:
