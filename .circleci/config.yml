@@ -37,7 +37,10 @@ jobs:
             ant -version
             ant clean dist
       - store_artifacts:
-          path: ~/tc-online-review/build/ant/auto_pilot/dist
+          path: ~/tc-online-review/build/ant/auto_pilot/dist/auto_pilot.jar
+      - store_artifacts:
+          path: ~/tc-online-review/build/ant/auto_pilot/dist/auto_pilot_app.jar
+
 workflows:
   version: 2
   build:
