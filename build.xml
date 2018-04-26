@@ -12,7 +12,7 @@
 
     <!--Import the build-components.xml -->
     <property name="components.conf" value="${online_review_home}/components.xml" />
-    <property name="components_dir" value="./../tc-components-dev" />
+    <property name="components_dir" value="./../tc-components" />
     <import file="${online_review_home}/build-components.xml" optional="yes"/>
 
     <!-- DIRECTORY SETUP -->
